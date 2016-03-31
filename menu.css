@@ -10,11 +10,25 @@ input[type=radio] {
     width: 100%;
 }
 
+html,
 body {
     background: #3D1A11;
     font-family: sans-serif;
     margin: 0;
     text-align: center;
+}
+.container-menus {
+    transform: translateX(0);
+    transition: transform 300ms ease;
+    width: 200%;
+}
+.container-menus .menu {
+    float: left;
+    width: 50%;
+}
+
+#opcao-bebidas:checked ~ .container-menus {
+    transform: translateX(-50%);
 }
 
 label {
